@@ -1,3 +1,3 @@
 clear;
 g++ main.cpp product.cpp product.h;
-./build/a.out;
+./a.out;
