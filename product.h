@@ -19,7 +19,8 @@ class Product {
         Product(std::string filename);
         void display();
         static Product prompt();
-        };
+        std::string get_name();
+};
 
 
 

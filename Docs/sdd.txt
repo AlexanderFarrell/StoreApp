@@ -13,3 +13,4 @@ Methods
 + Product(file_name)
 + void display()
 + Product prompt()
++ get_name();
