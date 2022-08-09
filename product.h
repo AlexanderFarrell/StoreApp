@@ -13,9 +13,15 @@ class Product {
         int quantity;
 
     public:
-        Product();
+        Product(std::string name, double price, double size, int quantity);
         ~Product();
-        void save(std::string file_name);
-};
+        void save(std::string file_name); 
+        Product(std::string filename);
+        void display();
+        static Product prompt();
+        };
 
+
+
+      
 #endif
