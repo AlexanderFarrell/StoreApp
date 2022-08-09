@@ -1,11 +1,21 @@
 #include <iostream>
+#include <string>
+#include <fstream>
+#include "product.h"
+// #include <dirent.h>
 
 void view_product() {
-    
+    std::cout << "Please enter a filename\n";
+    std::string s;
+    std::getline(std::cin, s);
+
+    Product p(s);
+    p.display();
 }
 
 void create_product() {
-
+    Product p = Product::prompt();
+    p.save("todo");
 }
 
 void list_products() {
