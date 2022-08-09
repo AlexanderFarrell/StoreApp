@@ -5,8 +5,9 @@
 // #include <dirent.h>
 
 void view_product() {
-    std::cout << "Please enter a filename\n";
+    std::cout << "Please enter a filename: ";
     std::string s;
+    std::cin.ignore();
     std::getline(std::cin, s);
 
     Product p(s);
@@ -29,7 +30,7 @@ int main(int argc, char const *argv[])
     bool running = true;
     while (running)
     {
-        std::cout << "Please enter an option\n";
+        std::cout << "\nPlease enter an option\n";
         std::cout << " 1. List Products\n";
         std::cout << " 2. Create Product\n";
         std::cout << " 3. View Product\n";
