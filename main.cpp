@@ -15,7 +15,7 @@ void view_product() {
 
 void create_product() {
     Product p = Product::prompt();
-    p.save("todo");
+    p.save(p.get_name());
 }
 
 void list_products() {
@@ -58,6 +58,6 @@ int main(int argc, char const *argv[])
                 std::cout << "Please enter a number between 1 and 4";
         }
     }
-    
+
     return 0;
 }
