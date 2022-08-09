@@ -1,0 +1,15 @@
+product 
+
+Members 
+- name 
+- Price
+- size
+- quantity 
+
+Methods
++ Product(name,price,size,quantity);
++ ~product();
++ void save(file_name)
++ Product(file_name)
++ void display()
++ Product prompt()
