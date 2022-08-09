@@ -6,12 +6,16 @@
 #include <fstream>
 
 class Product {
-    std::string name;
-    double price;
-    double size;
-    int quantity;
-    
+    private:
+        std::string name;
+        double price;
+        double size;
+        int quantity;
 
+    public:
+        Product();
+        ~Product();
+        void save(std::string file_name);
 };
 
 #endif
