@@ -5,6 +5,8 @@
 #include <iostream>
 #include <fstream>
 
+// Made some change
+
 class Product {
     private:
         std::string name;
